@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
   $('.burger').on('click', function() {
-       $('.b-menu').slideToggle(300, function(){
+       $('.b-menu').slideToggle(function(){
             if( $(this).css('display') === "none"){
                 $(this).removeAttr();
             }
        });
        $('..b-menu_link').on('click', function() {
-          $('.b-menu').slideUp();
+          $('.b-menu').slideUp(600);
        });
     });
 
@@ -81,4 +81,26 @@ $(document).ready(function(){
         $('.animate-bb').removeClass('brackets-big-w');
       }
     });
+
+  $('.btn, .btn_phone').click(function(){
+      $('.popup_container').fadeIn(700);
+    });
+
+  $('.popup_container').click(function(event){
+    if(event.target == this) {
+        $(this).fadeOut(500);
+    }
+  });
+
+  $('.title_btn').click(function(){
+      $('.popup_container_price').fadeIn(700);
+    });
+
+  $('.popup_container_price').click(function(event){
+    if(event.target == this) {
+        $(this).fadeOut(500);
+    }
+  });
+
+
 });

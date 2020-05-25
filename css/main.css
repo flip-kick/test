@@ -51,6 +51,62 @@
        url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
+/*popup*/
+
+.popup_container {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/popup-back.png);
+	z-index: 10;
+}
+
+.popup_title {
+	color: #7b716f;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.popup_bell {
+	max-width: 300px;
+	max-height: 370px;
+	background-color: #fff;
+	padding: 30px;
+	margin: 50px auto;
+	border-radius: 10px;
+}
+
+.popup_bell input {
+	margin-bottom: 25px;
+	padding-left: 5px;
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid rgba(255,78,46,0.5);
+}
+
+.popup_bell .btn {
+	margin: 15px 0 0 0;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.popup_container_price {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/popup-back.png);
+	z-index: 10;
+}
+
+::-webkit-input-placeholder {
+	color:#f53f4f;
+	font-size: 12px;
+	opacity: 0.35;
+}
+
 /*animate*/
 
 .animate {
@@ -290,7 +346,10 @@ span {
 
 .header {
 	background-color: #fbfbfb;
-	padding: 30px 0 0;
+}
+
+.top {
+	margin-top: 30px;
 }
 
 .burger {
@@ -333,12 +392,15 @@ span {
 	color: #f53f4f;
 }
 
+.btn-head {
+	margin-left: 30px;
+}
+
 .btn {
 	color: #f53f4f;
 	border: 1px solid #f53f4f;
 	border-radius: 0px;
 	padding: 10px 40px;
-	margin-left: 30px;
 	transition: 0.5s ease;
 }
 
@@ -652,9 +714,7 @@ h2 {
 
 	.b-menu_link {
 		display: inline-block;
-		background: linear-gradient(0deg, #f26522, #fa0891);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		color: rgba(0,0,0,0.5);
 		font-size: 21px;
 	    width: 120px;
 	    line-height: 1.8em;
@@ -663,6 +723,7 @@ h2 {
 
 	.b-menu_link:hover {
 		text-decoration: none;
+		color: rgba(0,0,0,0.7);
 		font-weight: bold;
 	}
 
@@ -1031,6 +1092,25 @@ h2 {
 
 	.copyright {
 		margin: 0;
+	}
+
+	/*popup*/
+
+	.popup_bell {
+		padding: 10px;
+		margin: 25px 10px;
+	}
+
+	.popup_title {
+		margin-bottom: 10px;
+	}
+
+	.popup_bell input {
+    margin-bottom: 15px;
+	}
+
+	.popup_bell .btn {
+    margin: 5px 0 0 0;
 	}
 
  	/*animate*/
