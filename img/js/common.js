@@ -1,28 +1,16 @@
 $(document).ready(function(){
 
-
   $('.burger').on('click', function() {
-      $('.b-menu').slideToggle(function(){
-          if( $(this).css('display') === "none"){
-              $(this).removeAttr();
-          }
-      });
-      $('..b-menu_link').on('click', function() {
-        $('.b-menu').slideUp(600);
-      });
+       $('.b-menu').slideToggle(function(){
+            if( $(this).css('display') === "none"){
+                $(this).removeAttr();
+            }
+       });
+       $('..b-menu_link').on('click', function() {
+          $('.b-menu').slideUp(600);
+       });
     });
 
-  $('.list_link, .b-menu_link, .footer_menu_link').on('click', function(event){
-      event.preventDefault();
-
-      let href = $(this).attr('href');
-
-      let offset = $(href).offset().top;
-
-      $('body,html').animate({
-        scrollTop: offset,
-      }, 700);
-  });
 
   $('.slider').slick({
 	infinite: true,
