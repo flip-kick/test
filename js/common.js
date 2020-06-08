@@ -179,7 +179,7 @@ $(document).ready(function(){
                               })
                               .always(function(response) {
                                   //ссылка на страницу "спасибо" - редирект
-                                  location.href = 'https://flip-kick.ru';
+                                  location.href = 'thx.html';
                               });
                           break;
                       // Если у формы id="popupResult" - делаем:
