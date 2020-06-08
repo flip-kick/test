@@ -1270,3 +1270,38 @@ h2 {
 		display: none;
 	}
 }
+
+/*thx*/
+
+.thanks {
+	height: 100vh;
+	background: linear-gradient(0deg, #f26522, #fa0891);	
+}
+
+.thanks_wrapper {
+	padding-top: 100px;
+	text-align: center;
+}
+
+.thanks_text {
+	font-size: 35px;
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+.thanks_btn {
+	padding: 10px 35px;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	transition: 0.5s ease;
+}
+
+.thanks_btn:hover {
+	font-size: 17px;
+	border-radius: 25px;
+	-webkit-box-shadow: 0px 0px 12px 3px rgba(179, 37, 41, 0.5);
+	-moz-box-shadow:    0px 0px 12px 3px rgba(179, 37, 41, 0.5);
+	box-shadow:         0px 0px 12px 3px rgba(179, 37, 41, 0.5);
+}
