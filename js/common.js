@@ -223,23 +223,23 @@ $(document).ready(function(){
   });
 
 
-  $(window).scroll(function() {
+  // $(window).scroll(function() {
  
-    if($(this).scrollTop() != 0) {
+  //   if($(this).scrollTop() != 0) {
      
-    $('#toTop').fadeIn();
+  //   $('#toTop').fadeIn();
      
-    } else {
+  //   } else {
      
-    $('#toTop').fadeOut();
+  //   $('#toTop').fadeOut();
      
-    }
+  //   }
      
-    });
+  //   });
      
-    $('#toTop').click(function() {
+  //   $('#toTop').click(function() {
      
-    $('body,html').animate({scrollTop:0},800);
+  //   $('body,html').animate({scrollTop:0},800);
      
-  });
+  // });
 });

@@ -233,7 +233,7 @@ input.error {
     animation-name: move-slash;
 }
 
-.section {
+#section {
 	position: relative; 
 }
 
@@ -627,7 +627,7 @@ h2 {
 
 /*section-money*/
 
-.section {
+#section {
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff8f5a+0,ff2f96+100 */
 	background: #ff8f5a; /* Old browsers */
 	background: -moz-linear-gradient(77deg,  #ff8f5a 0%, #ff2f96 100%); /* FF3.6-15 */
