@@ -180,6 +180,10 @@ $(document).ready(function(){
                               .always(function(response) {
                                   //ссылка на страницу "спасибо" - редирект
                                   location.href = 'thx.html';
+                                  setTimeout(function(){
+                                      var url = "http://flip-kick.ru/";
+                                      $(location.href).attr(url);
+                                  }, 3000);
                               });
                           break;
                       // Если у формы id="popupResult" - делаем:
@@ -223,23 +227,21 @@ $(document).ready(function(){
   });
 
 
-  // $(window).scroll(function() {
+  $(window).scroll(function() {
  
-  //   if($(this).scrollTop() != 0) {
+    if($(this).scrollTop() != 0) {
      
-  //   $('#toTop').fadeIn();
+    $('#toTop').fadeIn();
      
-  //   } else {
+    } else {
      
-  //   $('#toTop').fadeOut();
+    $('#toTop').fadeOut();
+    }
+    });
      
-  //   }
+    $('#toTop').click(function() {
      
-  //   });
+    $('body,html').animate({scrollTop:0},800);
      
-  //   $('#toTop').click(function() {
-     
-  //   $('body,html').animate({scrollTop:0},800);
-     
-  // });
+  });
 });
