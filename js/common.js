@@ -190,18 +190,23 @@ $(document).ready(function(){
                                   data: $form.serialize(),
                               })
                               .always(function(response) {
+                                  setTimeout(function(){
+                                      $('.popup_container').hide();
+                                  });
                                   setTimeout(function() {
                                       $('#loader').fadeOut();
                                   }, 800);
                                   setTimeout(function() {
                                       $('#overlay').fadeIn();
+                                  setTimeout(function(){
+                                      $('#overlay').fadeOut();
+                                  }, 3000);
                                       $form.trigger('reset');
                                       //строки для остлеживания целей в Я.Метрике и Google Analytics
                                   }, 1100);
                                   $('#overlay').on('click', function(e) {
                                       $(this).fadeOut();
                                   });
-
                               });
                           break;
                   }
@@ -215,5 +220,26 @@ $(document).ready(function(){
           valEl($(this));
       });
       
+  });
+
+
+  $(window).scroll(function() {
+ 
+    if($(this).scrollTop() != 0) {
+     
+    $('#toTop').fadeIn();
+     
+    } else {
+     
+    $('#toTop').fadeOut();
+     
+    }
+     
+    });
+     
+    $('#toTop').click(function() {
+     
+    $('body,html').animate({scrollTop:0},800);
+     
   });
 });

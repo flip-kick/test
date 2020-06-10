@@ -15,7 +15,7 @@
 <body>
 	<!-- Индикация процесса отправки формы -->
 		<div id="loader">
-			<img src="img/ripple.svg">
+			<img src="img/ripple.svg" alt="load">
 		</div>
 	<!-- Сообщение "спасибо" после отправки формы -->
 		<div id="overlay">
@@ -76,13 +76,13 @@
 					<nav>
 						<ul class="list">
 							<li class="list_item">
-								<a href=".section-offer" class="list_link">Услуги</a>
+								<a href="#section-offer" class="list_link">Услуги</a>
 							</li>
 							<li class="list_item">
-								<a href=".exp" class="list_link">Портфолио</a>
+								<a href="#exp" class="list_link">Портфолио</a>
 							</li>
 							<li class="list_item">
-								<a href=".section" class="list_link">Стоимость</a>
+								<a href="#section" class="list_link">Стоимость</a>
 							</li>
 						</ul>
 					</nav>
@@ -100,17 +100,17 @@
 			<div class="b-menu">
 				<ul class="b-menu">
 					<li class="b-menu_item">
-						<a href=".section-offer" class="b-menu_link">
+						<a href="#section-offer" class="b-menu_link">
 							Услуги
 						</a>
 					</li>
 					<li class="b-menu_item">
-						<a href=".exp" class="b-menu_link">
+						<a href="#exp" class="b-menu_link">
 							Портфолио
 						</a>
 					</li>
 					<li class="b-menu_item">
-						<a href=".section" class="b-menu_link">
+						<a href="#section" class="b-menu_link">
 							Стоимость
 						</a>
 					</li>
@@ -151,7 +151,7 @@
 		</div>
 	</div>
 	<!-- offer -->
-	<section class="section-offer">
+	<section id="section-offer">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -197,7 +197,7 @@
 		</div>
 	</section>
 	<!-- section-examples -->
-	<section class="exp">
+	<section id="exp">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -266,7 +266,7 @@
 		</div>
 	</section>
 	<!-- section-money -->
-	<section class="section">
+	<section id="section">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col">
@@ -305,13 +305,13 @@
 				<div class="col-12 col-md-3">
 					<ul class="footer_menu">
 						<li class="footer_menu_item">
-							<a href=".section-offer" class="footer_menu_link">Услуги</a>
+							<a href="#section-offer" class="footer_menu_link">Услуги</a>
 						</li>
 						<li class="footer_menu_item">
-							<a href=".exp" class="footer_menu_link">Портфолио</a>
+							<a href="#exp" class="footer_menu_link">Портфолио</a>
 						</li>
 						<li class="footer_menu_item">
-							<a href=".section" class="footer_menu_link">Стоимость</a>
+							<a href="#section" class="footer_menu_link">Стоимость</a>
 						</li>
 					</ul>
 				</div>
@@ -362,6 +362,8 @@
 			</div>
 		</div>
 	</footer>
+	<!-- кнопка вверх -->
+	<a href="#" class="topbutton" id="toTop">&#916;</a>
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/slick.min.js"></script>
