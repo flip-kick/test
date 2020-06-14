@@ -28,8 +28,8 @@ $(document).ready(function(){
 	infinite: true,
 	slidesToShow: 3,
 	slidesToScroll: 3,
-	prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow.png" alt=""></button>',
-  nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-next.png" alt=""></button>',
+	prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow.webp" alt=""></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-next.webp" alt=""></button>',
   	responsive: [
     {
       breakpoint: 1025,
@@ -180,10 +180,6 @@ $(document).ready(function(){
                               .always(function(response) {
                                   //ссылка на страницу "спасибо" - редирект
                                   location.href = 'thx.html';
-                                  setTimeout(function(){
-                                      var url = "http://flip-kick.ru/";
-                                      $(location.href).attr(url);
-                                  }, 3000);
                               });
                           break;
                       // Если у формы id="popupResult" - делаем:
@@ -236,7 +232,9 @@ $(document).ready(function(){
     } else {
      
     $('#toTop').fadeOut();
+     
     }
+     
     });
      
     $('#toTop').click(function() {
