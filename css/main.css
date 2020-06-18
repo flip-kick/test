@@ -170,6 +170,36 @@
   #email-error {
       top: 243px;
   }
+
+  .close_popup {
+      position: absolute;
+      top: 5px;
+      right: 20px;
+      z-index: 10;
+      cursor: pointer;
+  }
+
+  .close_popup:before {
+      content: '';
+      width: 21px;
+      height: 2px;
+      position: absolute;
+      background-color: #f53f4f;
+      top: 7px;
+      left: -4px;
+      transform: rotate(45deg);
+  }
+
+  .close_popup:after {
+    content: '';
+    width: 21px;
+    height: 2px;
+    position: absolute;
+    background-color: #f53f4f;
+    top: 7px;
+    left: -4px;
+    transform: rotate(-45deg);
+}
   
   /*animate*/
   
@@ -872,6 +902,10 @@
   
       .footer_menu, .contacts, .network{
           margin: 0;
+      }
+
+      .contacts {
+          margin-bottom: 35px;
       }
   
       .foot {

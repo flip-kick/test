@@ -116,6 +116,10 @@ $(document).ready(function(){
     }
   });
 
+  $('.close_popup').on('click', function(){
+    $('.popup_container, .popup_container_price').fadeOut(700);
+  });
+
 //Валидация и отправка формы
 
   $(document).ready(function() {
